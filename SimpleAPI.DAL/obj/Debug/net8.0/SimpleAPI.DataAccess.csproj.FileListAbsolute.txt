@@ -1,0 +1,17 @@
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\bin\Debug\net8.0\SimpleAPI.DataAccess.deps.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\bin\Debug\net8.0\SimpleAPI.DataAccess.runtimeconfig.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\bin\Debug\net8.0\SimpleAPI.DataAccess.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\bin\Debug\net8.0\SimpleAPI.DataAccess.pdb
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\bin\Debug\net8.0\SimpleAPI.Core.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\bin\Debug\net8.0\SimpleAPI.Core.pdb
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.AssemblyInfo.cs
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAP.F2B0ACD6.Up2Date
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\refint\SimpleAPI.DataAccess.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.pdb
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.genruntimeconfig.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\ref\SimpleAPI.DataAccess.dll

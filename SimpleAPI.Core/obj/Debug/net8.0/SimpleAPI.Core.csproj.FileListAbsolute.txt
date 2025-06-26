@@ -1,0 +1,14 @@
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\bin\Debug\net8.0\SimpleAPI.Core.deps.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\bin\Debug\net8.0\SimpleAPI.Core.runtimeconfig.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\bin\Debug\net8.0\SimpleAPI.Core.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\bin\Debug\net8.0\SimpleAPI.Core.pdb
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.csproj.AssemblyReference.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.AssemblyInfoInputs.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.AssemblyInfo.cs
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.csproj.CoreCompileInputs.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\refint\SimpleAPI.Core.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.pdb
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.genruntimeconfig.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\ref\SimpleAPI.Core.dll
