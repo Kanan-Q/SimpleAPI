@@ -12,3 +12,4 @@ C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\refint\Sim
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.pdb
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.genruntimeconfig.cache
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\ref\SimpleAPI.Core.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.Core\obj\Debug\net8.0\SimpleAPI.Core.sourcelink.json

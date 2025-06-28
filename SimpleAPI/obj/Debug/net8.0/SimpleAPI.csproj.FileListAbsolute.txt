@@ -176,3 +176,4 @@ C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\refint\SimpleAP
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\SimpleAPI.pdb
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\SimpleAPI.genruntimeconfig.cache
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\ref\SimpleAPI.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\SimpleAPI.sourcelink.json

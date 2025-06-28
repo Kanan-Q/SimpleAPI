@@ -15,3 +15,4 @@ C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\refint\Simp
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.pdb
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.genruntimeconfig.cache
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\ref\SimpleAPI.DataAccess.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI.DAL\obj\Debug\net8.0\SimpleAPI.DataAccess.sourcelink.json

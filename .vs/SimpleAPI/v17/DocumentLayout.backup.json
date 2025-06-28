@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{E867A1C9-14D2-492E-A6C0-D3A7D67A0D1D}|SimpleAPI.DAL\\SimpleAPI.DataAccess.csproj|solutionrelative:simpleapi.dal\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E2C2F94-2252-483D-8BE7-D1DF1F5826D2}|SimpleAPI.Core\\SimpleAPI.Core.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi.core\\repository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E2C2F94-2252-483D-8BE7-D1DF1F5826D2}|SimpleAPI.Core\\SimpleAPI.Core.csproj|solutionrelative:simpleapi.core\\repository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|solutionrelative:simpleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|solutionrelative:simpleapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi\\controllers\\informationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|solutionrelative:simpleapi\\controllers\\informationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi\\simpleapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|solutionrelative:simpleapi\\simpleapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6081D5C5-2C23-4048-9960-C2CE3F0A1458}|SimpleAPI.BL\\SimpleAPI.BL.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi.bl\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6081D5C5-2C23-4048-9960-C2CE3F0A1458}|SimpleAPI.BL\\SimpleAPI.BL.csproj|solutionrelative:simpleapi.bl\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,6 +28,19 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SimpleAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Program.cs",
+              "RelativeToolTip": "SimpleAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T19:53:45.719Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -42,54 +55,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.Core\\Repository\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "SimpleAPI.Core\\Repository\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.Core\\Repository\\IGenericRepository.cs",
-              "RelativeToolTip": "SimpleAPI.Core\\Repository\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T16:23:08.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Repository\\GenericRepository.cs",
               "RelativeDocumentMoniker": "SimpleAPI.DAL\\Repository\\GenericRepository.cs",
               "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Repository\\GenericRepository.cs",
               "RelativeToolTip": "SimpleAPI.DAL\\Repository\\GenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T16:22:04.507Z",
+              "WhenOpened": "2025-06-28T19:32:16.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "SimpleAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "SimpleAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "InformationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs",
+              "RelativeDocumentMoniker": "SimpleAPI\\Controllers\\InformationsController.cs",
+              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs",
+              "RelativeToolTip": "SimpleAPI\\Controllers\\InformationsController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T16:18:07.363Z",
+              "WhenOpened": "2025-06-28T19:30:18.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SimpleAPI",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
-              "RelativeDocumentMoniker": "SimpleAPI\\SimpleAPI.csproj",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
-              "RelativeToolTip": "SimpleAPI\\SimpleAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-26T16:18:03.589Z",
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.BL\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "SimpleAPI.BL\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.BL\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "SimpleAPI.BL\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIAzwBQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T19:17:34.657Z",
               "EditorCaption": ""
             }
           ]

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SimpleAPI.Core.Entities.Common
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
-        public Guid Id { get; set; }
-        public DateTime CreatedTime { get; set; }
+        public int Id { get; set; }
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
     }
 }
