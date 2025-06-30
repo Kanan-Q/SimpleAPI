@@ -29,7 +29,7 @@ namespace SimpleAPI.DataAccess.Repository
             if (data != null)
             {
                 _dbSet.Remove(data);
-                await _sql.SaveChangesAsync();
+                await _sql.SaveChangesAsync().ConfigureAwait(false);
             }
         }
         public async Task<IEnumerable<T>> GetAllAsync() => await _dbSet.ToListAsync().ConfigureAwait(false);

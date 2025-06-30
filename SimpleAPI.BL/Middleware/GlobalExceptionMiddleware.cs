@@ -35,8 +35,7 @@ public class GlobalExceptionMiddleware
         {
             ArgumentNullException => StatusCodes.Status400BadRequest,  // 400
             KeyNotFoundException => StatusCodes.Status404NotFound,     // 404
-            UnauthorizedAccessException => StatusCodes.Status401Unauthorized, // 401
-            _ => StatusCodes.Status500InternalServerError              // 500 (digər xətalar üçün)
+            UnauthorizedAccessException => StatusCodes.Status401Unauthorized,_ => StatusCodes.Status500InternalServerError              // 500 (digər xətalar üçün)
         };
 
         context.Response.StatusCode = statusCode;

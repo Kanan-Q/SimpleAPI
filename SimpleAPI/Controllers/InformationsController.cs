@@ -37,7 +37,7 @@ namespace SimpleAPI.Controllers
                 ProductName = dto.ProductName,
             };
             await _repo.CreateAsync(inf);
-            return Created();
+            return Created($"/api/informations/{inf.Id}",inf);
         }
 
         [HttpPut("{id}")]
