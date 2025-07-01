@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EFCore.BulkExtensions;
+using Microsoft.EntityFrameworkCore;
 using SimpleAPI.Core.Entities.Common;
 using SimpleAPI.Core.Repository;
 using SimpleAPI.DAL.Context;
@@ -12,10 +13,15 @@ namespace SimpleAPI.DataAccess.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        readonly AppDbContext _sql; 
+        readonly AppDbContext _sql;
         readonly DbSet<T> _dbSet;
 
         public GenericRepository(AppDbContext sql) => (_sql, _dbSet) = (sql, sql.Set<T>());
+
+        public async Task BulkInsertAsync(IEnumerable<T> entities)
+        {
+            await _sql.BulkInsertAsync(entities.ToList()).ConfigureAwait(false);
+        }
 
         public async Task CreateAsync(T entity)
         {

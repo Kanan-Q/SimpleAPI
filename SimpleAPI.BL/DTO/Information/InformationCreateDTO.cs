@@ -11,6 +11,6 @@ namespace SimpleAPI.BL.DTO.Information
         public string ProductName { get; init; }
         public string Description { get; init; }
         public decimal Price { get; init; }
-        public int CateyoryId { get; init; }
+        public int CategoryId { get; init; }
     }
 }

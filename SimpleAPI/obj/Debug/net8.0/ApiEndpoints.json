@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
+    "Method": "BulkInsert",
+    "RelativePath": "api/Informations/BulkInsert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SimpleAPI.BL.DTO.Information.InformationCreateDTO, SimpleAPI.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "Create",
     "RelativePath": "api/Informations/Create",
     "HttpMethod": "POST",

@@ -10,6 +10,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+//builder.Services.Scan(scan => scan
+//    .FromCallingAssembly<>()
+//    .AddClasses()
+//    .AsSelfWithInterfaces()
+//    .WithTransientLifetime()
+//);
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("AzureSql"));

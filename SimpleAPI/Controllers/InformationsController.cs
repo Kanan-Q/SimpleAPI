@@ -31,13 +31,13 @@ namespace SimpleAPI.Controllers
             if (dto == null || !ModelState.IsValid) return BadRequest();
             Information inf = new()
             {
-                CategoryId = dto.CateyoryId,
+                CategoryId = dto.CategoryId,
                 Description = dto.Description,
                 Price = dto.Price,
                 ProductName = dto.ProductName,
             };
             await _repo.CreateAsync(inf);
-            return Created($"/api/informations/{inf.Id}",inf);
+            return Created($"/api/informations/{inf.Id}", inf);
         }
 
         [HttpPut("{id}")]
@@ -61,6 +61,27 @@ namespace SimpleAPI.Controllers
             if (data is null) return NotFound();
             await _repo.DeleteAsync(id);
             return NoContent();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> BulkInsert(IEnumerable<InformationCreateDTO> dto)
+        {
+            if (dto == null || !ModelState.IsValid) return BadRequest();
+            var data = new List<Information>();
+            foreach (var item in dto)
+            {
+                Information inf = new()
+                {
+                    CategoryId = item.CategoryId,
+                    Description = item.Description,
+                    Price = item.Price,
+                    ProductName = item.ProductName,
+                };
+                data.Add(inf);
+            }
+            await _repo.BulkInsertAsync(data);
+            return Created("Created",data);
         }
 
     }

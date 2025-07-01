@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SimpleAPI.Core.Entities;
+using SimpleAPI.Core.Entities.Common;
 
 namespace SimpleAPI.DAL.Context
 {
@@ -10,5 +11,6 @@ namespace SimpleAPI.DAL.Context
         public DbSet<Staff> Staffs { get; set; }
         public DbSet<Department> Departments { get; set; }
         public AppDbContext(DbContextOptions opt):base(opt){}
+
     }
 }

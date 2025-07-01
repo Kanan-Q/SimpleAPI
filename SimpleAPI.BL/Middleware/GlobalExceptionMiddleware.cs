@@ -24,34 +24,26 @@ public class GlobalExceptionMiddleware
 
     }
 
-    // Xətanın JSON formatında HTTP cavabına çevrilməsi üçün köməkçi metod
-    private static Task HandleExceptionAsync(HttpContext context, Exception exception)
+    private static Task HandleExceptionAsync(HttpContext context, Exception ex)
     {
-        // Cavabın tipi JSON olaraq təyin edilir
-        context.Response.ContentType = "application/json";
+        context.Request.ContentType = "application/json";
 
-        // Xətanın növünə görə HTTP status kodunu təyin edirik
-        var statusCode = exception switch
+        var statusCode = ex switch
         {
-            ArgumentNullException => StatusCodes.Status400BadRequest,  // 400
-            KeyNotFoundException => StatusCodes.Status404NotFound,     // 404
-            UnauthorizedAccessException => StatusCodes.Status401Unauthorized,_ => StatusCodes.Status500InternalServerError              // 500 (digər xətalar üçün)
+            ArgumentException => StatusCodes.Status400BadRequest,
+            KeyNotFoundException => StatusCodes.Status404NotFound,
+            UnauthorizedAccessException => StatusCodes.Status401Unauthorized,
+            _ => StatusCodes.Status500InternalServerError
         };
-
         context.Response.StatusCode = statusCode;
 
-        // JSON formatında cavabın strukturu
         var response = new
         {
             StatusCode = statusCode,
-            Message = exception.Message,
-            // Detail = exception.StackTrace  // Debug üçün aktivləşdirilə bilər
+            Message = ex.Message
         };
-
-        // JSON-a çevrilir
         var json = JsonSerializer.Serialize(response);
-
-        // HTTP cavabı kimi göndərilir
         return context.Response.WriteAsync(json);
     }
+
 }
