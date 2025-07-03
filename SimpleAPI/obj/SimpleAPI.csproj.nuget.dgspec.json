@@ -79,9 +79,17 @@
               "target": "Package",
               "version": "[9.0.6, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
             "Scrutor": {
               "target": "Package",
               "version": "[6.1.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.41, )"
             }
           },
           "imports": [
@@ -168,9 +176,17 @@
               "target": "Package",
               "version": "[9.0.6, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
             "Scrutor": {
               "target": "Package",
               "version": "[6.1.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.41, )"
             }
           },
           "imports": [
@@ -261,9 +277,17 @@
               "target": "Package",
               "version": "[9.0.6, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
             "Scrutor": {
               "target": "Package",
               "version": "[6.1.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.41, )"
             }
           },
           "imports": [
@@ -354,9 +378,17 @@
               "target": "Package",
               "version": "[9.0.6, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
             "Scrutor": {
               "target": "Package",
               "version": "[6.1.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.8.41, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

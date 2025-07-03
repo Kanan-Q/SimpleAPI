@@ -75,6 +75,22 @@
   },
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
+    "Method": "Search",
+    "RelativePath": "api/Informations/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "Update",
     "RelativePath": "api/Informations/Update/{id}",
     "HttpMethod": "PUT",

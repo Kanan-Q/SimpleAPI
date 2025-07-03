@@ -12,5 +12,13 @@ namespace SimpleAPI.DAL.Context
         public DbSet<Department> Departments { get; set; }
         public AppDbContext(DbContextOptions opt):base(opt){}
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Information>(x =>
+            {
+                x.Property(x => x.ProductName).HasMaxLength(50);
+            });
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleAPI.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+670b647666f5272ab1d9cd6959595eb1e80dc44a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a666891f20f4b75a2e0f8b98b2f916362e52d54c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleAPI.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleAPI.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

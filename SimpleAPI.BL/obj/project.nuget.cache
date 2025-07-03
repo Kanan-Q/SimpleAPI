@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0OlHuaDbTeQ=",
+  "dgSpecHash": "nk7A3xAidlc=",
   "success": true,
   "projectFilePath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.BL\\SimpleAPI.BL.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\Kanan\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.6\\microsoft.entityframeworkcore.tools.9.0.6.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.6\\microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.6\\microsoft.extensions.caching.memory.9.0.6.nupkg.sha512",
+    "C:\\Users\\Kanan\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\8.0.17\\microsoft.extensions.caching.stackexchangeredis.8.0.17.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.6\\microsoft.extensions.configuration.abstractions.9.0.6.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.6\\microsoft.extensions.dependencyinjection.9.0.6.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.6\\microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512",
@@ -69,9 +70,11 @@
     "C:\\Users\\Kanan\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.11\\npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\oracle.entityframeworkcore\\8.23.70\\oracle.entityframeworkcore.8.23.70.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\oracle.manageddataaccess.core\\23.7.0\\oracle.manageddataaccess.core.23.7.0.nupkg.sha512",
+    "C:\\Users\\Kanan\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.2\\pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\scrutor\\6.1.0\\scrutor.6.1.0.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\Kanan\\.nuget\\packages\\stackexchange.redis\\2.8.41\\stackexchange.redis.2.8.41.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\Kanan\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

@@ -6,6 +6,7 @@ using SimpleAPI.DAL.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -41,6 +42,8 @@ namespace SimpleAPI.DataAccess.Repository
         public async Task<IEnumerable<T>> GetAllAsync() => await _dbSet.ToListAsync().ConfigureAwait(false);
 
         public async Task<T> GetByIdAsync(int id) => await _dbSet.AsTracking().Where(x => x.Id == id).FirstOrDefaultAsync().ConfigureAwait(false);
+
+        public IQueryable<T> Search(Expression<Func<T, bool>> predicate) => _dbSet.Where(predicate);
 
         public async Task UpdateAsync(T entity)
         {
