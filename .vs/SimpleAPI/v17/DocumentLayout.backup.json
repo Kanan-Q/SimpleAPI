@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Migrations\\20250704114052_CategoryConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SimpleAPI.DAL\\Migrations\\20250704114052_CategoryConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E867A1C9-14D2-492E-A6C0-D3A7D67A0D1D}|SimpleAPI.DAL\\SimpleAPI.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi.dal\\configuration\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E867A1C9-14D2-492E-A6C0-D3A7D67A0D1D}|SimpleAPI.DAL\\SimpleAPI.DataAccess.csproj|solutionrelative:simpleapi.dal\\configuration\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250704114052_CategoryConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Migrations\\20250704114052_CategoryConfig.cs",
-              "RelativeDocumentMoniker": "SimpleAPI.DAL\\Migrations\\20250704114052_CategoryConfig.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Migrations\\20250704114052_CategoryConfig.cs",
-              "RelativeToolTip": "SimpleAPI.DAL\\Migrations\\20250704114052_CategoryConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T11:40:52.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "StaffConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Configuration\\StaffConfiguration.cs",
               "RelativeDocumentMoniker": "SimpleAPI.DAL\\Configuration\\StaffConfiguration.cs",
@@ -80,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "DepartmentConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Configuration\\DepartmentConfiguration.cs",
               "RelativeDocumentMoniker": "SimpleAPI.DAL\\Configuration\\DepartmentConfiguration.cs",
@@ -93,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CategoryConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Configuration\\CategoryConfiguration.cs",
               "RelativeDocumentMoniker": "SimpleAPI.DAL\\Configuration\\CategoryConfiguration.cs",
@@ -106,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "InformationConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Configuration\\InformationConfiguration.cs",
               "RelativeDocumentMoniker": "SimpleAPI.DAL\\Configuration\\InformationConfiguration.cs",
@@ -119,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "SimpleAPI.DAL\\Context\\AppDbContext.cs",
@@ -131,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "InformationsController.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs",
               "RelativeDocumentMoniker": "SimpleAPI\\Controllers\\InformationsController.cs",

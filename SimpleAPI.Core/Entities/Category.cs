@@ -9,8 +9,8 @@ namespace SimpleAPI.Core.Entities
 {
     public sealed class Category:BaseEntity
     {
-        public string CategoryName { get; set; }
-        public ICollection<Information> Informations { get; set; }
+        public string? CategoryName { get; set; }
+        public ICollection<Information>? Informations { get; set; }
 
     }
 }
