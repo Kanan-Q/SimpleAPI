@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimpleAPI.BL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4276a2b18415de924b63c478ec4689fcf1c8b45b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fab8fa464415d28954e579fd955b6081c4f6a9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimpleAPI.BL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimpleAPI.BL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -236,7 +236,7 @@
             "type": "number",
             "format": "double"
           },
-          "cateyoryId": {
+          "categoryId": {
             "type": "integer",
             "format": "int32"
           }

@@ -14,11 +14,8 @@ namespace SimpleAPI.DAL.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Information>(x =>
-            {
-                x.Property(x => x.ProductName).HasMaxLength(50);
-            });
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
     }
 }
