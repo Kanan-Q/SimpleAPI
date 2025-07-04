@@ -8,13 +8,14 @@ namespace SimpleAPI.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class InformationsController(IGenericRepository<Information> _repo,ICacheService _cache) : ControllerBase
+    public class InformationsController(IGenericRepository<Information> _repo, ICacheService _cache) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             string cacheKey = "Info_GetAll";
             var cachedData = await _cache.GetAsync<List<Information>>(cacheKey);
+            if (cachedData != null && cachedData.Any()) return Ok(cachedData);
             var data = await _repo.GetAllAsync();
             if (data is null || !data.Any()) return BadRequest();
             await _cache.SetAsync(cacheKey, data);
@@ -24,9 +25,10 @@ namespace SimpleAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-            if (id == 0) return BadRequest();
+            if (id == 0 || id <= 0) return BadRequest();
             string cacheKey = $"Info_GetById_{id}";
             var cachedItem = await _cache.GetAsync<Information>(cacheKey);
+            if (cachedItem != null) return Ok(cachedItem);
             var data = await _repo.GetByIdAsync(id);
             if (data is null) return NotFound();
             await _cache.SetAsync(cacheKey, data);
@@ -52,12 +54,12 @@ namespace SimpleAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, InformationUpdateDTO dto)
         {
-            if (id == 0) return BadRequest();
+            if (id == 0 || id <= 0) return BadRequest();
             if (dto == null || !ModelState.IsValid) return BadRequest();
             var data = await _repo.GetByIdAsync(id);
             if (data is null) return BadRequest();
             data.ProductName = dto.ProductName;
-            data.CategoryId = dto.CateyoryId;
+            data.CategoryId = dto.CategoryId;
             data.Price = dto.Price;
             data.Description = dto.Description;
             await _repo.UpdateAsync(data);
@@ -69,7 +71,7 @@ namespace SimpleAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            if (id == 0) return BadRequest();
+            if (id == 0 || id <= 0) return BadRequest();
             var data = await _repo.GetByIdAsync(id);
             if (data is null) return NotFound();
             await _repo.DeleteAsync(id);
@@ -96,6 +98,7 @@ namespace SimpleAPI.Controllers
                 data.Add(inf);
             }
             await _repo.BulkInsertAsync(data);
+            await _cache.RemoveAsync("Info_GetAll");
             return Created("Created", data);
         }
         [HttpGet]
