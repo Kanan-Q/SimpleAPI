@@ -2,7 +2,7 @@
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "BulkInsert",
-    "RelativePath": "api/v:{version}/Informations/BulkInsert",
+    "RelativePath": "api/Informations/BulkInsert",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -11,11 +11,6 @@
         "Name": "dto",
         "Type": "System.Collections.Generic.IEnumerable\u00601[[SimpleAPI.BL.DTO.Information.InformationCreateDTO, SimpleAPI.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -23,7 +18,7 @@
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "Create",
-    "RelativePath": "api/v:{version}/Informations/Create",
+    "RelativePath": "api/Informations/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -32,11 +27,6 @@
         "Name": "dto",
         "Type": "SimpleAPI.BL.DTO.Information.InformationCreateDTO",
         "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -44,7 +34,7 @@
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "Delete",
-    "RelativePath": "api/v:{version}/Informations/Delete/{id}",
+    "RelativePath": "api/Informations/Delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -53,11 +43,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -65,23 +50,17 @@
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "GetAll",
-    "RelativePath": "api/v:{version}/Informations/GetAll",
+    "RelativePath": "api/Informations/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "GetById",
-    "RelativePath": "api/v:{version}/Informations/GetById",
+    "RelativePath": "api/Informations/GetById",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -90,11 +69,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -102,7 +76,7 @@
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "Search",
-    "RelativePath": "api/v:{version}/Informations/Search",
+    "RelativePath": "api/Informations/Search",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -111,11 +85,6 @@
         "Name": "query",
         "Type": "System.String",
         "IsRequired": false
-      },
-      {
-        "Name": "version",
-        "Type": "",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -123,7 +92,7 @@
   {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "Update",
-    "RelativePath": "api/v:{version}/Informations/Update/{id}",
+    "RelativePath": "api/Informations/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -136,11 +105,6 @@
       {
         "Name": "dto",
         "Type": "SimpleAPI.BL.DTO.Information.InformationUpdateDTO",
-        "IsRequired": true
-      },
-      {
-        "Name": "version",
-        "Type": "",
         "IsRequired": true
       }
     ],

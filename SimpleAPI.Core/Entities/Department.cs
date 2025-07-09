@@ -5,12 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleAPI.Core.Entities
+namespace SimpleAPI.Core.Entities;
+public sealed class Department:BaseEntity
 {
-    public sealed class Department:BaseEntity
-    {
-        public string DepartmentName { get; set; }
-        public ICollection<Staff> Staffs { get; set; }
+    public string? DepartmentName { get; set; }
+    public ICollection<Staff>? Staffs { get; set; }
 
-    }
 }

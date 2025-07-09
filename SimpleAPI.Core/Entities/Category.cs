@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleAPI.Core.Entities
+namespace SimpleAPI.Core.Entities;
+public sealed class Category : BaseEntity
 {
-    public sealed class Category:BaseEntity
-    {
-        public string? CategoryName { get; set; }
-        public ICollection<Information>? Informations { get; set; }
+    public string? CategoryName { get; set; }
+    public ICollection<Information>? Informations { get; set; }
 
-    }
 }
+

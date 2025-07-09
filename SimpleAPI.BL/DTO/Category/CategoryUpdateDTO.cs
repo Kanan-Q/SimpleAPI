@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleAPI.BL.DTO.Category
+namespace SimpleAPI.BL.DTO.Category;
+public sealed record CategoryUpdateDTO
 {
-    public sealed record CategoryUpdateDTO
-    {
-        public string CategoryName { get; init; }
-    }
+    public string CategoryName { get; init; }
 }

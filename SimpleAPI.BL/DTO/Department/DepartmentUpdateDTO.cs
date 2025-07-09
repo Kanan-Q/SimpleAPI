@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleAPI.BL.DTO.Department
+namespace SimpleAPI.BL.DTO.Department;
+public sealed record DepartmentUpdateDTO
 {
-    public sealed record DepartmentUpdateDTO
-    {
-        public string DepartmentName { get; init; }
-    }
+    public string DepartmentName { get; init; }
 }

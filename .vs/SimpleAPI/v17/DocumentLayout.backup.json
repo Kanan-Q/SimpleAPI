@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi\\controllers\\informationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|solutionrelative:simpleapi\\controllers\\informationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|solutionrelative:simpleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E867A1C9-14D2-492E-A6C0-D3A7D67A0D1D}|SimpleAPI.DAL\\SimpleAPI.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi.dal\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E867A1C9-14D2-492E-A6C0-D3A7D67A0D1D}|SimpleAPI.DAL\\SimpleAPI.DataAccess.csproj|solutionrelative:simpleapi.dal\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,45 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Program.cs",
-              "RelativeDocumentMoniker": "SimpleAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Program.cs",
-              "RelativeToolTip": "SimpleAPI\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T07:58:07.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Repository\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "SimpleAPI.DAL\\Repository\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Repository\\GenericRepository.cs",
-              "RelativeToolTip": "SimpleAPI.DAL\\Repository\\GenericRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T07:30:05.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InformationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs",
-              "RelativeDocumentMoniker": "SimpleAPI\\Controllers\\InformationsController.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs*",
-              "RelativeToolTip": "SimpleAPI\\Controllers\\InformationsController.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T07:29:59.499Z",
-              "EditorCaption": ""
             }
           ]
         }

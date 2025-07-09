@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleAPI.BL.DTO.Information
+namespace SimpleAPI.BL.DTO.Information;
+public sealed record InformationCreateDTO
 {
-    public sealed record InformationCreateDTO
-    {
-        public string ProductName { get; init; }
-        public string Description { get; init; }
-        public decimal Price { get; init; }
-        public int CategoryId { get; init; }
-    }
+    public string ProductName { get; init; }
+    public string Description { get; init; }
+    public decimal Price { get; init; }
+    public int CategoryId { get; init; }
 }

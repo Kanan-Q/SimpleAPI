@@ -4,12 +4,10 @@ using System.Text.Json;
 
 public class GlobalExceptionMiddleware
 {
-    private readonly RequestDelegate _next;
-    private readonly ILogger<GlobalExceptionMiddleware> _logger;
+    readonly RequestDelegate _next;
+    readonly ILogger<GlobalExceptionMiddleware> _logger;
     public GlobalExceptionMiddleware(RequestDelegate next, ILogger<GlobalExceptionMiddleware> looger) => (_next, _logger) = (next, looger);
-
-
-    // Middleware-nin əsas metodu: hər HTTP request burada keçir
+    #region InvokeAync
     public async Task InvokeAsync(HttpContext httpContext)
     {
         try
@@ -23,6 +21,7 @@ public class GlobalExceptionMiddleware
         }
 
     }
+    #endregion InvokeAync
 
     private static Task HandleExceptionAsync(HttpContext context, Exception ex)
     {

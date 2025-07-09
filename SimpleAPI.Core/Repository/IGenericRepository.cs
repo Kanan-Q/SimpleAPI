@@ -5,16 +5,15 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleAPI.Core.Repository
+namespace SimpleAPI.Core.Repository;
+public interface IGenericRepository<T> where T : class
 {
-    public interface IGenericRepository<T> where T : class
-    {
-        Task<IEnumerable<T>> GetAllAsync();
-        Task<T> GetByIdAsync(int id);
-        Task CreateAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(int id);
-        Task BulkInsertAsync(IEnumerable<T> entites);
-        IQueryable<T> Search(Expression<Func<T, bool>> predicate);
-    }
+    Task<IEnumerable<T>> GetAllAsync();
+    Task<T> GetByIdAsync(int id);
+    Task CreateAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(int id);
+    Task BulkInsertAsync(IEnumerable<T> entites);
+    IQueryable<T> Search(Expression<Func<T, bool>> predicate);
 }
+

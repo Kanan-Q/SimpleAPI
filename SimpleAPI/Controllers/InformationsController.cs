@@ -3,6 +3,8 @@ using SimpleAPI.BL.Cache;
 using SimpleAPI.BL.DTO.Information;
 using SimpleAPI.Core.Entities;
 using SimpleAPI.Core.Repository;
+using System.Diagnostics;
+using static System.Console;
 
 namespace SimpleAPI.Controllers;
 
@@ -14,7 +16,10 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
     public async Task<IActionResult> GetAll()
     {
         string cacheKey = "Info_GetAll";
+        var sw = Stopwatch.StartNew();
         var cachedData = await _cache.GetAsync<List<Information>>(cacheKey);
+        sw.Stop();
+        WriteLine($"oxuma{sw.ElapsedMilliseconds} ms");
         if (cachedData != null && cachedData.Any()) return Ok(cachedData);
         var data = await _repo.GetAllAsync();
         if (data is null || !data.Any()) return BadRequest();

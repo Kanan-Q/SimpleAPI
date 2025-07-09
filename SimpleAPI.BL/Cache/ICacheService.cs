@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleAPI.BL.Cache
+namespace SimpleAPI.BL.Cache;
+public interface ICacheService
 {
-    public interface ICacheService
-    {
-        Task<T> GetAsync<T>(string key);
-        Task SetAsync<T>(string key, T value);
-        Task RemoveAsync(string key);
-    }
+    Task<T> GetAsync<T>(string key);
+    Task SetAsync<T>(string key, T value);
+    Task RemoveAsync(string key);
 }
