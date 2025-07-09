@@ -5,10 +5,20 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Informations/GetAll": {
+    "/api/v:{version}/Informations/GetAll": {
       "get": {
         "tags": [
           "Informations"
+        ],
+        "parameters": [
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -17,7 +27,7 @@
         }
       }
     },
-    "/api/Informations/GetById": {
+    "/api/v:{version}/Informations/GetById": {
       "get": {
         "tags": [
           "Informations"
@@ -30,6 +40,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -39,10 +57,20 @@
         }
       }
     },
-    "/api/Informations/Create": {
+    "/api/v:{version}/Informations/Create": {
       "post": {
         "tags": [
           "Informations"
+        ],
+        "parameters": [
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -70,7 +98,7 @@
         }
       }
     },
-    "/api/Informations/Update/{id}": {
+    "/api/v:{version}/Informations/Update/{id}": {
       "put": {
         "tags": [
           "Informations"
@@ -84,6 +112,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {
@@ -112,7 +148,7 @@
         }
       }
     },
-    "/api/Informations/Delete/{id}": {
+    "/api/v:{version}/Informations/Delete/{id}": {
       "delete": {
         "tags": [
           "Informations"
@@ -126,6 +162,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -135,10 +179,20 @@
         }
       }
     },
-    "/api/Informations/BulkInsert": {
+    "/api/v:{version}/Informations/BulkInsert": {
       "post": {
         "tags": [
           "Informations"
+        ],
+        "parameters": [
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -175,7 +229,7 @@
         }
       }
     },
-    "/api/Informations/Search": {
+    "/api/v:{version}/Informations/Search": {
       "get": {
         "tags": [
           "Informations"
@@ -184,6 +238,14 @@
           {
             "name": "query",
             "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }

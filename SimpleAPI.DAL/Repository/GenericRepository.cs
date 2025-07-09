@@ -14,15 +14,13 @@ namespace SimpleAPI.DataAccess.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        readonly AppDbContext _sql;
-        readonly DbSet<T> _dbSet;
+        readonly AppDbContext _sql; readonly DbSet<T> _dbSet;
 
+        #region Constructor
         public GenericRepository(AppDbContext sql) => (_sql, _dbSet) = (sql, sql.Set<T>());
+        #endregion Constructor
 
-        public async Task BulkInsertAsync(IEnumerable<T> entities)
-        {
-            await _sql.BulkInsertAsync(entities.ToList()).ConfigureAwait(false);
-        }
+        public async Task BulkInsertAsync(IEnumerable<T> entities) => await _sql.BulkInsertAsync(entities.ToList()).ConfigureAwait(false);
 
         public async Task CreateAsync(T entity)
         {
