@@ -7,7 +7,6 @@ using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace SimpleAPI.BL.Cache;
-
 public sealed class RedisCacheService(IDistributedCache _cache) : ICacheService
 {
     public async Task<T> GetAsync<T>(string key)
