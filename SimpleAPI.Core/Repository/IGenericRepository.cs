@@ -13,7 +13,7 @@ public interface IGenericRepository<T> where T : class
     Task CreateAsync(T entity);
     Task UpdateAsync(T entity);
     Task DeleteAsync(int id);
-    Task BulkInsertAsync(IEnumerable<T> entites);
+    Task BulkInsertAsync(IEnumerable<T> entities);
     IQueryable<T> Search(Expression<Func<T, bool>> predicate);
 }
 

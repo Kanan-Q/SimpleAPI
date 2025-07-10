@@ -11,12 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddStackExchangeRedisCache(options =>
-{
-    options.Configuration = builder.Configuration.GetConnectionString("Redis");
-});
+builder.Services.AddStackExchangeRedisCache(options => options.Configuration = builder.Configuration.GetConnectionString("Redis"));
 builder.Services.AddScoped<ICacheService, RedisCacheService>();
-//builder.Services.Scan(scan => scan.FromCallingAssembly<>().AddClasses().AsSelfWithInterfaces().WithTransientLifetime());
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("AzureSql"));
@@ -30,10 +26,7 @@ if (app.Environment.IsDevelopment())
 }
 //app.UseExceptionHandler();
 app.UseMiddleware<GlobalExceptionMiddleware>();
-
 app.UseHttpsRedirection();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
