@@ -109,5 +109,15 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SimpleAPI.Controllers.StaffsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Staffs/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]
