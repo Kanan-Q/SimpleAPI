@@ -19,7 +19,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
         var sw = Stopwatch.StartNew();
         var cachedData = await _cache.GetAsync<List<Information>>(cacheKey);
         sw.Stop();
-        WriteLine($"oxuma{sw.ElapsedMilliseconds} ms");
+        WriteLine($"Time:{sw.ElapsedMilliseconds} ms");
         if (cachedData != null && cachedData.Any()) return Ok(cachedData);
         var data = await _repo.GetAllAsync();
         if (data is null || !data.Any()) return BadRequest();
@@ -51,7 +51,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
         Information inf = new()
         {
             CategoryId = dto.CategoryId,
-            Description = dto.Description,
+            Description = dto.Description.Trim(),
             Price = dto.Price,
             ProductName = dto.ProductName,
         };
@@ -109,7 +109,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
                 Price = item.Price,
                 ProductName = item.ProductName,
             };
-            data.Add(inf);
+            await _repo.CreateAsync(inf);
         }
         await _repo.BulkInsertAsync(data);
         await _cache.RemoveAsync("Info_GetAll");

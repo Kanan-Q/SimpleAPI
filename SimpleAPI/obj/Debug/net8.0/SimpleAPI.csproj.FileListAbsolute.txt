@@ -228,3 +228,6 @@ C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\Pipelines.Socke
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\StackExchange.Redis.dll
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\runtimeconfig.template.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
