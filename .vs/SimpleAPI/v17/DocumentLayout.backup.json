@@ -7,18 +7,6 @@
       "RelativeMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|solutionrelative:simpleapi\\controllers\\informationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6081D5C5-2C23-4048-9960-C2CE3F0A1458}|SimpleAPI.BL\\SimpleAPI.BL.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi.bl\\validator\\informaton\\informationcreatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6081D5C5-2C23-4048-9960-C2CE3F0A1458}|SimpleAPI.BL\\SimpleAPI.BL.csproj|solutionrelative:simpleapi.bl\\validator\\informaton\\informationcreatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7BD1CF6-B5E9-492C-92F6-DDC0B78C5B09}|SimpleAPI\\SimpleAPI.csproj|solutionrelative:simpleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E867A1C9-14D2-492E-A6C0-D3A7D67A0D1D}|SimpleAPI.DAL\\SimpleAPI.DataAccess.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi.dal\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E867A1C9-14D2-492E-A6C0-D3A7D67A0D1D}|SimpleAPI.DAL\\SimpleAPI.DataAccess.csproj|solutionrelative:simpleapi.dal\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6081D5C5-2C23-4048-9960-C2CE3F0A1458}|SimpleAPI.BL\\SimpleAPI.BL.csproj|c:\\users\\kanan\\source\\repos\\simpleapi\\simpleapi.bl\\dto\\category\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6081D5C5-2C23-4048-9960-C2CE3F0A1458}|SimpleAPI.BL\\SimpleAPI.BL.csproj|solutionrelative:simpleapi.bl\\dto\\category\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CategoryCreateDTO.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.BL\\DTO\\Category\\CategoryCreateDTO.cs",
               "RelativeDocumentMoniker": "SimpleAPI.BL\\DTO\\Category\\CategoryCreateDTO.cs",
@@ -58,47 +46,7 @@
               "RelativeToolTip": "SimpleAPI.BL\\DTO\\Category\\CategoryCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T18:14:16.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "SimpleAPI.DAL\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "SimpleAPI.DAL\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T18:06:37.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Program.cs",
-              "RelativeDocumentMoniker": "SimpleAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Program.cs",
-              "RelativeToolTip": "SimpleAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T17:45:44.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InformationCreateValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.BL\\Validator\\Informaton\\InformationCreateValidator.cs",
-              "RelativeDocumentMoniker": "SimpleAPI.BL\\Validator\\Informaton\\InformationCreateValidator.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.BL\\Validator\\Informaton\\InformationCreateValidator.cs",
-              "RelativeToolTip": "SimpleAPI.BL\\Validator\\Informaton\\InformationCreateValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAACHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T17:29:49.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T18:14:16.371Z"
             },
             {
               "$type": "Document",
@@ -106,16 +54,16 @@
               "Title": "InformationsController.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs",
               "RelativeDocumentMoniker": "SimpleAPI\\Controllers\\InformationsController.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs",
-              "RelativeToolTip": "SimpleAPI\\Controllers\\InformationsController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAG4AAAAOAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs*",
+              "RelativeToolTip": "SimpleAPI\\Controllers\\InformationsController.cs*",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAQwG4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T18:41:38.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "StaffConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.DAL\\Configuration\\StaffConfiguration.cs",
               "RelativeDocumentMoniker": "SimpleAPI.DAL\\Configuration\\StaffConfiguration.cs",
@@ -123,8 +71,7 @@
               "RelativeToolTip": "SimpleAPI.DAL\\Configuration\\StaffConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T18:50:09.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T18:50:09.603Z"
             }
           ]
         }

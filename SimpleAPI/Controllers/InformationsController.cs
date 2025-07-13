@@ -109,7 +109,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
                 Price = item.Price,
                 ProductName = item.ProductName,
             };
-            await _repo.CreateAsync(inf);
+            data.Add(inf);
         }
         await _repo.BulkInsertAsync(data);
         await _cache.RemoveAsync("Info_GetAll");
