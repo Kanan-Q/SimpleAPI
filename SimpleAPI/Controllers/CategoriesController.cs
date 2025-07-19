@@ -16,8 +16,20 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         var cacheData = await _cache.GetAsync<List<Category>>(cacheKey);
         if (cacheData != null && cacheData.Any()) return Ok(cacheData);
         var data = await _repo.GetAllAsync();
-        if (data is null || !data.Any()) return BadRequest();
-        await _cache.SetAsync(cacheKey,cacheData);
+        if (data is null || !data.Any()) return NotFound();
+        await _cache.SetAsync(cacheKey, cacheData);
+        return Ok(data);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetById(int id)
+    {
+        string cacheKey = $"Categories_Get_By_Id{id}";
+        var cacheData = await _cache.GetAsync<List<Category>>(cacheKey);
+        if (cacheData != null && cacheData.Any()) return Ok(cacheData);
+        var data = await _repo.GetByIdAsync(id);
+        if (data is null) return NotFound();
+        await _cache.SetAsync(cacheKey, cacheData);
         return Ok(data);
     }
 }

@@ -22,7 +22,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
         WriteLine($"Time:{sw.ElapsedMilliseconds} ms");
         if (cachedData != null && cachedData.Any()) return Ok(cachedData);
         var data = await _repo.GetAllAsync();
-        if (data is null || !data.Any()) return BadRequest();
+        if (data is null || !data.Any()) return NotFound();
         await _cache.SetAsync(cacheKey, data);
         return Ok(data);
     }
