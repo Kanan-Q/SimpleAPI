@@ -1,12 +1,44 @@
 [
   {
     "ContainingType": "SimpleAPI.Controllers.CategoriesController",
+    "Method": "Create",
+    "RelativePath": "api/Categories/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SimpleAPI.BL.DTO.Category.CategoryCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SimpleAPI.Controllers.CategoriesController",
     "Method": "GetAll",
     "RelativePath": "api/Categories/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SimpleAPI.Controllers.CategoriesController",
+    "Method": "GetById",
+    "RelativePath": "api/Categories/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

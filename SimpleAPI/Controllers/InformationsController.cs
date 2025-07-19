@@ -47,7 +47,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
     [HttpPost]
     public async Task<IActionResult> Create(InformationCreateDTO dto)
     {
-        if (dto == null || !ModelState.IsValid) return BadRequest();
+        if (dto is null || !ModelState.IsValid) return BadRequest();
         Information inf = new()
         {
             CategoryId = dto.CategoryId,
@@ -66,7 +66,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
     public async Task<IActionResult> Update(int id, InformationUpdateDTO dto)
     {
         if (id == 0 || id <= 0) return BadRequest();
-        if (dto == null || !ModelState.IsValid) return BadRequest();
+        if (dto is null || !ModelState.IsValid) return BadRequest();
         var data = await _repo.GetByIdAsync(id);
         if (data is null) return BadRequest();
         data.ProductName = dto.ProductName;
@@ -98,7 +98,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
     [HttpPost]
     public async Task<IActionResult> BulkInsert(IEnumerable<InformationCreateDTO> dto)
     {
-        if (dto == null || !ModelState.IsValid) return BadRequest();
+        if (dto is null || !ModelState.IsValid) return BadRequest();
         var data = new List<Information>();
         foreach (var item in dto)
         {

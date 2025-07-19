@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SimpleAPI.BL.Cache;
+using SimpleAPI.BL.DTO.Category;
 using SimpleAPI.Core.Entities;
 using SimpleAPI.Core.Repository;
 
@@ -9,6 +10,7 @@ namespace SimpleAPI.Controllers;
 [ApiController, Route("api/[controller]/[action]")]
 public class CategoriesController(IGenericRepository<Category> _repo, ICacheService _cache) : ControllerBase
 {
+    #region GetAll
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -20,7 +22,9 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         await _cache.SetAsync(cacheKey, cacheData);
         return Ok(data);
     }
+    #endregion GetAll
 
+    #region GetById
     [HttpGet]
     public async Task<IActionResult> GetById(int id)
     {
@@ -32,4 +36,21 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         await _cache.SetAsync(cacheKey, cacheData);
         return Ok(data);
     }
+    #endregion GetById
+
+    #region Create
+    [HttpPost]
+    public async Task<IActionResult> Create(CategoryCreateDTO dto)
+    {
+        if (dto is null || !ModelState.IsValid) return BadRequest();
+        Category category = new()
+        {
+            CategoryName = dto.CategoryName
+        };
+        await _repo.CreateAsync(category);
+        await _cache.RemoveAsync("Categories_GetAll");
+        return Created($"api/Categories/{category.Id}:", category);
+    }
+    #endregion Create
+
 }

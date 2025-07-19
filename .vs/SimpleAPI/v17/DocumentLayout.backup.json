@@ -42,9 +42,9 @@
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "SimpleAPI\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\CategoriesController.cs*",
-              "RelativeToolTip": "SimpleAPI\\Controllers\\CategoriesController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABGAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "SimpleAPI\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T09:39:40.478Z",
               "EditorCaption": ""
@@ -57,9 +57,10 @@
               "RelativeDocumentMoniker": "SimpleAPI\\Controllers\\InformationsController.cs",
               "ToolTip": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\Controllers\\InformationsController.cs",
               "RelativeToolTip": "SimpleAPI\\Controllers\\InformationsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T18:41:38.966Z"
+              "WhenOpened": "2025-07-10T18:41:38.966Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
