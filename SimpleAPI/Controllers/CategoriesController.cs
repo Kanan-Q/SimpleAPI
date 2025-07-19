@@ -80,4 +80,24 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     }
     #endregion Delete
 
+    #region BulkInsert
+    [HttpPost]
+    public async Task<IActionResult> BulkInsert(IEnumerable<CategoryCreateDTO> dto)
+    {
+        if (dto is null || !ModelState.IsValid) return BadRequest();
+        var data = new List<Category>();
+        foreach (var item in dto)
+        {
+            Category category = new()
+            {
+                CategoryName = item.CategoryName
+            };
+            data.Add(category);
+        }
+        await _repo.BulkInsertAsync(data);
+        await _cache.RemoveAsync("Categories_GetAll");
+        return Created("Created", data);
+    }
+    #endregion BulkInsert
+
 }
