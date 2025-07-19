@@ -15,11 +15,11 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     public async Task<IActionResult> GetAll()
     {
         string cacheKey = "Categories_GetAll";
-        var cacheData = await _cache.GetAsync<List<Category>>(cacheKey);
+        var cacheData = await _cache.GetAsync<IEnumerable<Category>>(cacheKey);
         if (cacheData != null && cacheData.Any()) return Ok(cacheData);
         var data = await _repo.GetAllAsync();
         if (data is null || !data.Any()) return NotFound();
-        await _cache.SetAsync(cacheKey, cacheData);
+        await _cache.SetAsync(cacheKey, data);
         return Ok(data);
     }
     #endregion GetAll
@@ -29,11 +29,11 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     public async Task<IActionResult> GetById(int id)
     {
         string cacheKey = $"Categories_GetById{id}";
-        var cacheData = await _cache.GetAsync<List<Category>>(cacheKey);
+        var cacheData = await _cache.GetAsync<IEnumerable<Category>>(cacheKey);
         if (cacheData != null && cacheData.Any()) return Ok(cacheData);
         var data = await _repo.GetByIdAsync(id);
         if (data is null) return NotFound();
-        await _cache.SetAsync(cacheKey, cacheData);
+        await _cache.SetAsync(cacheKey, data);
         return Ok(data);
     }
     #endregion GetById
@@ -45,7 +45,7 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         if (dto is null || !ModelState.IsValid) return BadRequest();
         Category category = new()
         {
-            CategoryName = dto.CategoryName
+            CategoryName = dto.CategoryName.ToLower().Trim()
         };
         await _repo.CreateAsync(category);
         await _cache.RemoveAsync("Categories_GetAll");
@@ -60,7 +60,7 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         if (dto is null || !ModelState.IsValid) return BadRequest();
         var data = await _repo.GetByIdAsync(id);
         if (data is null) return BadRequest();
-        data.CategoryName = dto.CategoryName;
+        data.CategoryName = dto.CategoryName.ToLower().Trim();
         await _repo.UpdateAsync(data);
         await _cache.RemoveAsync("Categories_GetAll");
         await _cache.RemoveAsync($"Categories_GetById{id}");
@@ -90,7 +90,7 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         {
             Category category = new()
             {
-                CategoryName = item.CategoryName
+                CategoryName = item.CategoryName.ToLower().Trim()
             };
             data.Add(category);
         }
@@ -100,4 +100,12 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     }
     #endregion BulkInsert
 
+    [HttpGet]
+    public async Task<IActionResult> Search(string query)
+    {
+        if (string.IsNullOrWhiteSpace(query)) return BadRequest();
+        var data = _repo.Search(x => x.CategoryName.ToLower().Contains(query));
+        if (data is null) return NotFound();
+        return Ok(data);
+    }
 }
