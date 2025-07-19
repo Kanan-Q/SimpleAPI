@@ -53,4 +53,18 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     }
     #endregion Create
 
+    #region Update
+    [HttpPut]
+    public async Task<IActionResult> Update(int id, CategoryUpdateDTO dto)
+    {
+        if (dto is null || !ModelState.IsValid) return BadRequest();
+        var data = await _repo.GetByIdAsync(id);
+        if (data is null) return BadRequest();
+        data.CategoryName = dto.CategoryName;
+        await _repo.UpdateAsync(data);
+        await _cache.RemoveAsync("Categories_GetAll");
+        return Ok(data);
+    }
+    #endregion Update
+
 }

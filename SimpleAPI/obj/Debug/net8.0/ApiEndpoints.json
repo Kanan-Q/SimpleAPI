@@ -42,6 +42,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SimpleAPI.Controllers.CategoriesController",
+    "Method": "Update",
+    "RelativePath": "api/Categories/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "SimpleAPI.BL.DTO.Category.CategoryUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "BulkInsert",
     "RelativePath": "api/Informations/BulkInsert",
