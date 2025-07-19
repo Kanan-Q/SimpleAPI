@@ -28,7 +28,7 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     [HttpGet]
     public async Task<IActionResult> GetById(int id)
     {
-        string cacheKey = $"Categories_Get_By_Id{id}";
+        string cacheKey = $"Categories_GetById{id}";
         var cacheData = await _cache.GetAsync<List<Category>>(cacheKey);
         if (cacheData != null && cacheData.Any()) return Ok(cacheData);
         var data = await _repo.GetByIdAsync(id);
@@ -63,8 +63,21 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         data.CategoryName = dto.CategoryName;
         await _repo.UpdateAsync(data);
         await _cache.RemoveAsync("Categories_GetAll");
-        return Ok(data);
+        await _cache.RemoveAsync($"Categories_GetById{id}");
+        return NoContent();
     }
     #endregion Update
+
+    #region Delete
+    [HttpDelete]
+    public async Task<IActionResult> Delete(int id)
+    {
+        if (id == null) return BadRequest();
+        await _repo.DeleteAsync(id);
+        await _cache.RemoveAsync("Categories_GetAll");
+        await _cache.RemoveAsync($"Categories_GetById{id}");
+        return NoContent();
+    }
+    #endregion Delete
 
 }

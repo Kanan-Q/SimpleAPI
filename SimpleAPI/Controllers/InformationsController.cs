@@ -85,8 +85,6 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
     public async Task<IActionResult> Delete(int id)
     {
         if (id == 0 || id <= 0) return BadRequest();
-        var data = await _repo.GetByIdAsync(id);
-        if (data is null) return NotFound();
         await _repo.DeleteAsync(id);
         await _cache.RemoveAsync("Info_GetAll");
         await _cache.RemoveAsync($"Info_GetById_{id}");
