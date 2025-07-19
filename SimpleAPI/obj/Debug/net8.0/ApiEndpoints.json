@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "SimpleAPI.Controllers.CategoriesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Categories/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SimpleAPI.Controllers.InformationsController",
     "Method": "BulkInsert",
     "RelativePath": "api/Informations/BulkInsert",
