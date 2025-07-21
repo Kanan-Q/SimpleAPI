@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "SimpleAPI.Controllers.CategoriesController",
+    "Method": "BulkInsert",
+    "RelativePath": "api/Categories/BulkInsert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SimpleAPI.BL.DTO.Category.CategoryCreateDTO, SimpleAPI.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SimpleAPI.Controllers.CategoriesController",
     "Method": "Create",
     "RelativePath": "api/Categories/Create",
     "HttpMethod": "POST",
@@ -52,6 +68,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SimpleAPI.Controllers.CategoriesController",
+    "Method": "Search",
+    "RelativePath": "api/Categories/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

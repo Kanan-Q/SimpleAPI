@@ -149,12 +149,6 @@ C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\scopedcss\bundl
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets\msbuild.SimpleAPI.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets\msbuild.SimpleAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.SimpleAPI.props
-C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SimpleAPI.props
-C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SimpleAPI.props
-C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\SimpleAPI.csproj.Up2Date
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\SimpleAPI.dll
@@ -231,3 +225,8 @@ C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\runtimeconfig.t
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets.build.json.cache

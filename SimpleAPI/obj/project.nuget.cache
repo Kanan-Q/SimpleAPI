@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0uF1O4DSl+E=",
+  "dgSpecHash": "WC/7Vzdmpe8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
   "expectedPackageFiles": [
@@ -117,8 +117,10 @@
     {
       "code": "NU1608",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: Pomelo.EntityFrameworkCore.MySql 8.0.2 requires Microsoft.EntityFrameworkCore.Relational (>= 8.0.2 && <= 8.0.999) but version Microsoft.EntityFrameworkCore.Relational 9.0.6 was resolved.",
+      "projectPath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net8.0"
@@ -127,12 +129,23 @@
     {
       "code": "NU1608",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: Oracle.EntityFrameworkCore 8.23.70 requires Microsoft.EntityFrameworkCore.Relational (>= 8.0.11 && < 9.0.0) but version Microsoft.EntityFrameworkCore.Relational 9.0.6 was resolved.",
+      "projectPath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational",
       "targetGraphs": [
         "net8.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI\\SimpleAPI.csproj",
+      "targetGraphs": []
     }
   ]
 }

@@ -17,7 +17,7 @@ public class InformationsController(IGenericRepository<Information> _repo, ICach
     {
         string cacheKey = "Info_GetAll";
         var sw = Stopwatch.StartNew();
-        var cachedData = await _cache.GetAsync<List<Information>>(cacheKey);
+        var cachedData = await _cache.GetAsync<IEnumerable<Information>>(cacheKey);
         sw.Stop();
         WriteLine($"Time:{sw.ElapsedMilliseconds} ms");
         if (cachedData != null && cachedData.Any()) return Ok(cachedData);

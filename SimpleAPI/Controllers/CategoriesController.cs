@@ -54,7 +54,7 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     #endregion Create
 
     #region Update
-    [HttpPut]
+    [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, CategoryUpdateDTO dto)
     {
         if (dto is null || !ModelState.IsValid) return BadRequest();
@@ -69,7 +69,7 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     #endregion Update
 
     #region Delete
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
         if (id == null) return BadRequest();
