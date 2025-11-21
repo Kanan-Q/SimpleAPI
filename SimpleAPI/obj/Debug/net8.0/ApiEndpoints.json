@@ -34,7 +34,7 @@
   {
     "ContainingType": "SimpleAPI.Controllers.CategoriesController",
     "Method": "Delete",
-    "RelativePath": "api/Categories/Delete",
+    "RelativePath": "api/Categories/Delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -42,7 +42,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -92,7 +92,7 @@
   {
     "ContainingType": "SimpleAPI.Controllers.CategoriesController",
     "Method": "Update",
-    "RelativePath": "api/Categories/Update",
+    "RelativePath": "api/Categories/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -100,7 +100,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "dto",

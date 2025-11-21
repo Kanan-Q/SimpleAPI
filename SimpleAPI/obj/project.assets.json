@@ -2190,6 +2190,19 @@
         "runtime": {
           "bin/placeholder/SimpleAPI.DataAccess.dll": {}
         }
+      },
+      "SimpleAPI.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SimpleAPI.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SimpleAPI.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SimpleAPI.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -5808,6 +5821,11 @@
       "type": "project",
       "path": "../SimpleAPI.DAL/SimpleAPI.DataAccess.csproj",
       "msbuildProject": "../SimpleAPI.DAL/SimpleAPI.DataAccess.csproj"
+    },
+    "SimpleAPI.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../SimpleAPI.Infrastructure/SimpleAPI.Infrastructure.csproj",
+      "msbuildProject": "../SimpleAPI.Infrastructure/SimpleAPI.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5820,6 +5838,7 @@
       "Microsoft.Extensions.Caching.StackExchangeRedis >= 8.0.17",
       "Scrutor >= 6.1.0",
       "SimpleAPI.BL >= 1.0.0",
+      "SimpleAPI.Infrastructure >= 1.0.0",
       "StackExchange.Redis >= 2.8.41",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -5858,6 +5877,9 @@
           "projectReferences": {
             "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.BL\\SimpleAPI.BL.csproj": {
               "projectPath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.BL\\SimpleAPI.BL.csproj"
+            },
+            "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.Infrastructure\\SimpleAPI.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Kanan\\source\\repos\\SimpleAPI\\SimpleAPI.Infrastructure\\SimpleAPI.Infrastructure.csproj"
             }
           }
         }
@@ -5960,12 +5982,6 @@
       "targetGraphs": [
         "net8.0"
       ]
-    },
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

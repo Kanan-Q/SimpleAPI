@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using SimpleAPI.BL.Cache;
+﻿using Microsoft.AspNetCore.Mvc;
+using SimpleAPI.Core.Cache;
 using SimpleAPI.Core.Entities;
 using SimpleAPI.Core.Repository;
 

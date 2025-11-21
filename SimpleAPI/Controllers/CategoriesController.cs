@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using SimpleAPI.BL.Cache;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SimpleAPI.BL.DTO.Category;
+using SimpleAPI.Core.Cache;
 using SimpleAPI.Core.Entities;
 using SimpleAPI.Core.Repository;
 
@@ -16,11 +16,11 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     {
         string cacheKey = "Categories_GetAll";
         var cacheData = await _cache.GetAsync<IEnumerable<Category>>(cacheKey);
-        if (cacheData != null && cacheData.Any()) return Ok(cacheData);
+        if (cacheData != null && cacheData.Any()) return StatusCode(StatusCodes.Status200OK, cacheData);
         var data = await _repo.GetAllAsync();
-        if (data is null || !data.Any()) return NotFound();
+        if (data is null || !data.Any()) return StatusCode(StatusCodes.Status404NotFound);
         await _cache.SetAsync(cacheKey, data);
-        return Ok(data);
+        return StatusCode(StatusCodes.Status200OK,data);
     }
     #endregion GetAll
 
@@ -32,9 +32,9 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         var cacheData = await _cache.GetAsync<IEnumerable<Category>>(cacheKey);
         if (cacheData != null && cacheData.Any()) return Ok(cacheData);
         var data = await _repo.GetByIdAsync(id);
-        if (data is null) return NotFound();
+        if (data is null) return StatusCode(StatusCodes.Status404NotFound);
         await _cache.SetAsync(cacheKey, data);
-        return Ok(data);
+        return StatusCode(StatusCodes.Status200OK, data);
     }
     #endregion GetById
 
@@ -42,14 +42,19 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     [HttpPost]
     public async Task<IActionResult> Create(CategoryCreateDTO dto)
     {
-        if (dto is null || !ModelState.IsValid) return BadRequest();
+        if (dto is null || !ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest);
         Category category = new()
         {
             CategoryName = dto.CategoryName.ToLower().Trim()
         };
         await _repo.CreateAsync(category);
         await _cache.RemoveAsync("Categories_GetAll");
-        return Created($"api/Categories/{category.Id}:", category);
+        return StatusCode(StatusCodes.Status201Created, new
+        {
+            Location = $"api/Categories/{category.Id}",
+            Message = "Data Created",
+            Data = category
+        }); 
     }
     #endregion Create
 
@@ -57,14 +62,14 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, CategoryUpdateDTO dto)
     {
-        if (dto is null || !ModelState.IsValid) return BadRequest();
+        if (dto is null || !ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest);
         var data = await _repo.GetByIdAsync(id);
-        if (data is null) return BadRequest();
+        if (data is null) return StatusCode(StatusCodes.Status400BadRequest);
         data.CategoryName = dto.CategoryName.ToLower().Trim();
         await _repo.UpdateAsync(data);
         await _cache.RemoveAsync("Categories_GetAll");
         await _cache.RemoveAsync($"Categories_GetById{id}");
-        return NoContent();
+        return StatusCode(StatusCodes.Status204NoContent);
     }
     #endregion Update
 
@@ -72,11 +77,13 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-        if (id == null) return BadRequest();
+        if (id <= 0) return StatusCode(StatusCodes.Status400BadRequest);
+        var data = await _repo.GetByIdAsync(id);
+        if (data is null) return StatusCode(StatusCodes.Status400BadRequest);
         await _repo.DeleteAsync(id);
         await _cache.RemoveAsync("Categories_GetAll");
         await _cache.RemoveAsync($"Categories_GetById{id}");
-        return NoContent();
+        return StatusCode(StatusCodes.Status204NoContent);
     }
     #endregion Delete
 
@@ -84,7 +91,7 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
     [HttpPost]
     public async Task<IActionResult> BulkInsert(IEnumerable<CategoryCreateDTO> dto)
     {
-        if (dto is null || !ModelState.IsValid) return BadRequest();
+        if (dto is null || !ModelState.IsValid) return StatusCode(StatusCodes.Status400BadRequest);
         var data = new List<Category>();
         foreach (var item in dto)
         {
@@ -96,16 +103,18 @@ public class CategoriesController(IGenericRepository<Category> _repo, ICacheServ
         }
         await _repo.BulkInsertAsync(data);
         await _cache.RemoveAsync("Categories_GetAll");
-        return Created("Created", data);
+        return StatusCode(StatusCodes.Status201Created,data);
     }
     #endregion BulkInsert
 
+    #region Search
     [HttpGet]
     public async Task<IActionResult> Search(string query)
     {
-        if (string.IsNullOrWhiteSpace(query)) return BadRequest();
-        var data = _repo.Search(x => x.CategoryName.ToLower().Contains(query));
-        if (data is null) return NotFound();
-        return Ok(data);
+        if (string.IsNullOrWhiteSpace(query)) return StatusCode(StatusCodes.Status400BadRequest);
+        var data = _repo.Search(x => x.CategoryName.ToLower().Contains(query.ToLower()));
+        if (!await data.AnyAsync()) return StatusCode(StatusCodes.Status400BadRequest);
+        return StatusCode(StatusCodes.Status200OK,data);
     }
+    #endregion Search
 }

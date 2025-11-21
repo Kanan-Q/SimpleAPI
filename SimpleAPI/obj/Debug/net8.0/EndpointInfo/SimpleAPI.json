@@ -70,7 +70,7 @@
         }
       }
     },
-    "/api/Categories/Update": {
+    "/api/Categories/Update/{id}": {
       "put": {
         "tags": [
           "Categories"
@@ -78,7 +78,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -111,7 +112,7 @@
         }
       }
     },
-    "/api/Categories/Delete": {
+    "/api/Categories/Delete/{id}": {
       "delete": {
         "tags": [
           "Categories"
@@ -119,7 +120,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"

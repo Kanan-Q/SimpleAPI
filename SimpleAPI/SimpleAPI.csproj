@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SimpleAPI.BL\SimpleAPI.BL.csproj" />
+    <ProjectReference Include="..\SimpleAPI.Infrastructure\SimpleAPI.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SimpleAPI.BL.Cache;
 using SimpleAPI.BL.DTO.Information;
+using SimpleAPI.Core.Cache;
 using SimpleAPI.Core.Entities;
 using SimpleAPI.Core.Repository;
 using System.Diagnostics;

@@ -230,3 +230,5 @@ C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\rjimswa.dswa.ca
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\SimpleAPI.Infrastructure.dll
+C:\Users\Kanan\source\repos\SimpleAPI\SimpleAPI\bin\Debug\net8.0\SimpleAPI.Infrastructure.pdb

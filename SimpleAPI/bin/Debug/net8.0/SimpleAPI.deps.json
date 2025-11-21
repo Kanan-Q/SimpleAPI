@@ -16,6 +16,7 @@
           "Microsoft.Extensions.Caching.StackExchangeRedis": "8.0.17",
           "Scrutor": "6.1.0",
           "SimpleAPI.BL": "1.0.0",
+          "SimpleAPI.Infrastructure": "1.0.0",
           "StackExchange.Redis": "2.8.41",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
@@ -1539,6 +1540,17 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "SimpleAPI.Infrastructure/1.0.0": {
+        "dependencies": {
+          "SimpleAPI.Core": "1.0.0"
+        },
+        "runtime": {
+          "SimpleAPI.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -2315,6 +2327,11 @@
       "sha512": ""
     },
     "SimpleAPI.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SimpleAPI.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
